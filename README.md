@@ -2,10 +2,6 @@
 
 This repository contains the official data and code for the ACL 2022 findings paper "Analyzing Dynamic Adversarial Training Data in the Limit".
 
-## License
-
-See the LICENSE file for details.
-
 ## Data
 
 The `data` folders contains our final training datasets, broken down by non-adversarial data collection, static adversarial data collection, and dynamic adversarial collection. The datasets differ slightly from the ones used in the paper, namely a small amount of data was removed for quality reasons. We also include our manually-crafted test set.
