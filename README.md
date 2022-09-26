@@ -1,4 +1,4 @@
-# DADC in the Limit
+# Analyzing Dynamic Adversarial Training Data in the Limit
 
 This repository contains the official data and code for the ACL 2022 findings paper "Analyzing Dynamic Adversarial Training Data in the Limit".
 
