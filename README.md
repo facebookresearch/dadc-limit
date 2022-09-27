@@ -24,6 +24,8 @@ pip install -r requirements.txt
 ```
 Now you should be ready to go!
 
+The `train-all-nli-100000` checkpoint is the static adversarial model used in the experiments. It is a binary NLI model trained for 100,000 steps on the union of SNLI, MNLI, and FEVER-NLI.  
+  
 ## Citation
 
 Please consider citing our work if you found this code or our paper beneficial to your research.
