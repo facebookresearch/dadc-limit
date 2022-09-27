@@ -4,7 +4,7 @@ This repository contains the official data and code for the ACL 2022 findings pa
 
 ## Data
 
-The `data` folders contains our final training datasets, broken down by the collection type: non-adversarial data collection, static adversarial data collection, and dynamic adversarial collection. The datasets differ slightly from the ones used in the paper, namely they contain a few thousand more examples that were not ready by the final release. We also release our manually-crafted test set.
+The `data` folders contains our final training datasets, broken down by the collection type: non-adversarial data collection, static adversarial data collection, and dynamic adversarial collection. The datasets differ slightly from the ones used in the paper, namely they contain ~10% more data, consisting of examples that were not ready by the paper. We also release our manually-crafted test set.
 
 ## Analysis
 
