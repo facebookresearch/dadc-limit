@@ -25,7 +25,7 @@ def compute_stats(contexts, hypotheses, labels):
 
     return np.array(high_overlap_rates_entailment), np.array(high_overlap_rates_contradiction)
 
-datasets = ['../data/non-adversarial.jsonl', '../data/static-adversarial.jsonl', '../data/dynamic-adversarial.jsonl']
+datasets = ['../data/non-adversarial-with-rounds.jsonl', '../data/static-adversarial-with-rounds.jsonl', '../data/dynamic-adversarial-with-rounds.jsonl']
 for dataset in datasets:
     contexts = []
     hypotheses = []
@@ -40,4 +40,4 @@ for dataset in datasets:
     print("Dataset", dataset)
     print('High Overlap Entailment Count', sum(high_overlap_rates_entailment))
     print('High Overlap Contradiction Count', sum(high_overlap_rates_contradiction))
-    print('High Overlap Contradiction %', sum(high_overlap_rates_entailment) / (sum(high_overlap_rates_entailment) + sum(high_overlap_rates_contradiction)))
+    print('High Overlap Entailment %', sum(high_overlap_rates_entailment) / (sum(high_overlap_rates_entailment) + sum(high_overlap_rates_contradiction)))

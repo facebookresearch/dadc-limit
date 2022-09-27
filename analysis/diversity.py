@@ -45,7 +45,7 @@ def compute_stats(contexts, hypotheses, labels):
         context_counts[context] += 1
     return words, bigrams, interbleu_scores, contradiction_rate, context_counts
 
-datasets = ['../data/non-adversarial.jsonl', '../data/static-adversarial.jsonl', '../data/dynamic-adversarial.jsonl']
+datasets = ['../data/non-adversarial-with-rounds.jsonl', '../data/static-adversarial-with-rounds.jsonl', '../data/dynamic-adversarial-with-rounds.jsonl']
 for dataset in datasets:
     contexts = []
     hypotheses = []

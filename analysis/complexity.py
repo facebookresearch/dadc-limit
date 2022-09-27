@@ -58,7 +58,7 @@ def compute_stats(contexts, hypotheses, labels):
             model_fooled.append(0)
     return readability_scores, yngve_scores, sentence_lengths, model_fooled
 
-datasets = ['../data/non-adversarial.jsonl', '../data/static-adversarial.jsonl', '../data/dynamic-adversarial.jsonl']
+datasets = ['../data/non-adversarial-with-rounds.jsonl', '../data/static-adversarial-with-rounds.jsonl', '../data/dynamic-adversarial-with-rounds.jsonl']
 for dataset in datasets:
     contexts = []
     hypotheses = []
