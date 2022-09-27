@@ -15,7 +15,9 @@ See the `analysis` folder to recreate the analysis experiments from Section 5 of
 
 ## Training Models
 
-The `training` folder contains code to reproduce the training experiments using RoBERTa large models. To run the `train.sh` script to recreate the experiments, you will need to run the following installation inside the `training` folder.
+The `training` folder contains the static adversarial model and the code to reproduce the other training experiments using RoBERTa large models. The `train-all-nli-100000` checkpoint is the static adversarial model used in the experiments. It is a binary NLI model trained for 100,000 steps on the union of SNLI, MNLI, and FEVER-NLI. You will need to download that model from the following [link](https://drive.google.com/drive/folders/16Hw0wddhfZcsaA589s6_DHIGpwTIB1fH?usp=sharing) as the checkpoint is too big to fit onto github.  
+
+To recreate the training experiments using various amounts of round data, use the `train.sh` script. You will need to run the following installation inside the `training` folder.
 
 ```
 conda create -n dadc python=3.7
